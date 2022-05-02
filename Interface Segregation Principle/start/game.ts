@@ -30,7 +30,7 @@ class Character implements Entity {
     console.log(`${this.name} has ${this.health} health remaining`);
   }
 }
-
+//! Turret cannot move and wall cannot attack, so we must segregate ENtity interface to smaller interface
 class Turret implements Entity {
   attackDamage: number;
   health: number;
